@@ -15,7 +15,7 @@ export const categories = writable([
         id: 'events',
     },
     {
-        title: 'Official Informaiton',
+        title: 'Official Information',
         id: 'official-information',
     },
     {
