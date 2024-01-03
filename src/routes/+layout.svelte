@@ -30,6 +30,6 @@
       {@html webManifest}
   </svelte:head>
   
-  <main>
+  <main class="w-screen h-screen bg-gray-100">
     <slot />
   </main>

@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import { GoogleAuthProvider, getAuth, signInWithPopup, setPersistence, browserSessionPersistence } from "firebase/auth";
 
 
 // Your web app's Firebase configuration
@@ -30,3 +30,4 @@ export async function signIn() {
     const res = await signInWithPopup(auth, provider)
     return res.user
 }
+setPersistence(auth, browserSessionPersistence)
